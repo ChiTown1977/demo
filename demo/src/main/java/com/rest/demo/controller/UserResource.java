@@ -22,7 +22,7 @@ public class UserResource {
 	}
 	
 	@GetMapping("/users/{id}")
-	public User findUserById(@PathVariable("id") int id) {
+	public User findUserById(@PathVariable int id) {
 		return userDaoService.findById(id);
 	}
 }
